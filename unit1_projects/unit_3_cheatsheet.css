@@ -1,0 +1,51 @@
+.header h1{
+ 	color:#000000;
+ 	text-align:center;
+ 	background-color: #ff6666;
+ 	box-shadow: 5px 5px 12px #888888;
+}
+
+
+
+
+body {
+	width:60%;
+	margin:0 auto;	
+	color:black;  
+	}
+
+.container1{	
+	border: 1px solid #ff6600;
+	padding:10px;
+	box-shadow: 5px 5px 12px #888888;
+
+}
+#git{
+	float:right;
+	height:90px;
+	width:117px;
+	
+	margin-right:20px;
+	box-shadow: 5px 5px 12px #888888; 
+	margin-left: 20px;
+}
+#github{
+	float:right;
+	height:100px;
+	width:80px;
+
+	box-shadow: 5px 5px 12px #888888;
+	margin-right:50px;
+
+}
+
+body p{
+	color:#6699ff; 
+
+ol{
+	color: #6699ff;  
+}
+
+#footer{
+	text-align: right;
+}
