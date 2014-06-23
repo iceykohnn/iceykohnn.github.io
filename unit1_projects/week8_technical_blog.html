@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="stylesheets/technical_blog.css">
+</head>
+<body>
+        <div id="container">
+    <div id="top">
+    <h1>What is <strong> Recursion</strong>?</h1>
+    <p> Ok!  What is recursion? Technically speaking, it is the repeated application of a recursive procedure or definition.  In terms of computer science, (PROGRAMMING!) it is a method where the solution to a problem depends on solutions to smaller instances of the same problem.  What does that even mean?  Most would say that means solving a problem by using the solution of self.  But that still sounds really confusing, doesn't it? So let's get into it.  
+        </p>
+    </div>
+    
+        <div id="middle">
+    <p>To make it easier, lets say that recursion is a function calling itself within its own code to solve a problem.  Now to some people that sounds like when someone you know says, 'You know that I know, that you KNOW that I know, that YOU know that I know!!!!!!'  Or better yet, it's like looking into perfectly opposing mirrors that seem to show the same image in their reflections going on infinitely.  The image is a recursive image.  Now we can use that property of using yourself inside of yourself in code to break down problems into smaller problems to solve them.  
+
+    For example, if we wanted to count down from five, the code could look like this: 
+
+    ```
+    def recursion_method(variable)
+        if variable > 0
+            print variable
+                recursion_method(variable - 1)
+        else
+            "I think we're all done here"
+    end
+    ```
+    If you notice we called the method "recur" inside of the actual definition of the the method, "recur". What? Yah, that happened. We defined the method by using it inside of itself. That means that every time I use this method it is going to repeat. Check it out. 
+
+    We have to call this method to see it work and that would look a little something  like this:
+    ```
+    recursion_method(5)
+    ```
+    This would give us the result of:
+    ```
+    5
+    4
+    3
+    2
+    1
+    I think we're all done here
+    ```
+    
+        </p>
+    </div>
+        <div id="bottom">
+            <p> In this example, I showed the proper way to use recursion.  By the proper way, I mean using a loop, so as not to crash your computer by letting it run the "recursion_method" method forever. We told the computer to end and print "I think we're all done here" when variable became equal to zero.  If we didn't do that, it would just go on into the negatives.  Loops help us use the recursive property in a good way, so we can solve big problems in an easier format.  (I know that counting down from 5 isn't really a big problem, but we didn't have to actually write code for each step of the counting down process, now did we? Ha!)  I hope this didn't confuse you terribly.  Now please excuse me, while I go break some mirrors.
+        </p>
+    </div>
+    
+    </div>
+        </body>
+    </html>
