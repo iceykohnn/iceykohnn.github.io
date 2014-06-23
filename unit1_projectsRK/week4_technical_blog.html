@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="stylesheets/technical_blog.css">
+</head>
+<body>
+        <div id="container">
+    <div id="top">
+    <h1>How do we use <strong> Enumerable</strong>?</h1>
+    <p>Ok, Let's talk about "Enumerable". The best place to start with is the definition from the ruby-doc. org page
+        which says:
+
+
+        So what does that mean?  What that is vasically saying is that the emumerable mixin gives a lot of the extra functionality to collection classes.  Collection classes include, arrays, hashes, ranges and strings.  An enumerable is somethin that can be counted.  We can do thinsgs with sets that can be counted, like sort, collect, and search through them. 
+        Now there is one thing, based on the definition, that is necessary.  We need to use the each method, to yield successive members of the collection, meaning if we have this set of collected things, and we want to do something with one of them, we need to pull that one thing out and look at it, to do something with it, right? well, that is where the 'each' method comes in. Each allows us to look at something and pull it out, select it, for use singularly. we use that like so:
+        </p>
+    </div>
+    
+        <div id="middle">
+    <p>Also, it goes on to say that if we want to use the enumerable#max, , min or sort methods , then we must also use a <=> operatior, so that we can acrally put items in order.  We have to know which ones are the max and which are the min, right? Fa sho.
+        </p>
+    </div>
+        <div id="bottom">
+            <p> Let;s look at the enumerable #map.  Map and collect are synonymous.  This works best with arrays, but can be used with ranges and hashes. Map takes eaxh element in the array/range/hash and iterates it, or looks specifically at it as one element, processes it through the code block we supply, and puts that value into a new array with the processing applied.  
+                Remember that the number of items in will always wqual the number of the items out.  Map would be most helpful in a situation like when you are trying to perform a function for an entire set of items in an array/range/hash, i.e. trying to capitalize all the names in an array.  
+        </p>
+    </div>
+    
+    </div>
+        </body>
+    </html>
